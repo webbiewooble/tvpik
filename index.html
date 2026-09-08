@@ -1,0 +1,3206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVPicks - Legal & Authorized Entertainment Services</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen bg-[#f8fafc] font-sans text-slate-800 selection:bg-blue-100"
+  >
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="max-w-[1600px] mx-auto py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+      >
+        <a href="#home" class="flex items-center select-none shrink-0 group">
+          <img
+            src="tvpicks-logo.png"
+            alt="TVPicks Logo"
+            class="h-9 sm:h-10 lg:h-12 w-auto object-contain transform group-hover:scale-[1.02] transition-transform duration-300"
+          />
+        </a>
+
+        <div
+          class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-700"
+        >
+          <a
+            id="nav-home"
+            href="#home"
+            class="text-[#2563eb] border-b-2 border-[#2563eb] pb-1"
+            >Home</a
+          >
+          <a
+            id="nav-plans"
+            href="#plans"
+            class="hover:text-[#2563eb] transition-colors"
+            >Plans</a
+          >
+          <a
+            id="nav-about"
+            href="#about-us"
+            class="hover:text-[#2563eb] transition-colors"
+            >About Us</a
+          >
+          <a
+            id="nav-privacy"
+            href="#privacy-policy"
+            class="hover:text-[#2563eb] transition-colors"
+            >Privacy Policy</a
+          >
+          <a
+            id="nav-refund"
+            href="#refund-policy"
+            class="hover:text-[#2563eb] transition-colors"
+            >Refund Policy</a
+          >
+          <a
+            id="nav-platforms"
+            href="#supported-platforms"
+            class="hover:text-[#2563eb] transition-colors"
+            >Supported Platforms</a
+          >
+          <a
+            id="nav-contact"
+            href="#contact-us"
+            class="hover:text-[#2563eb] transition-colors"
+            >Contact Us</a
+          >
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/918588853774"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden sm:flex bg-[#0f172a] text-white px-5 py-2.5 rounded-lg items-center gap-2 text-sm font-bold hover:bg-slate-800 transition-colors shadow-sm"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Us
+          </a>
+          <a
+            href="https://wa.me/918588853774"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="sm:hidden bg-[#0f172a] text-white p-2.5 rounded-lg flex items-center justify-center font-bold hover:bg-slate-800 transition-colors shadow-sm"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </a>
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-lg"
+          >
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-sm lg:hidden flex-col pt-24 px-6 pb-6 h-screen overflow-y-auto"
+    >
+      <button
+        id="close-menu-btn"
+        class="absolute top-6 right-6 p-2 text-slate-700 hover:bg-slate-100 rounded-lg"
+      >
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <div class="flex flex-col gap-6 text-lg font-bold text-slate-800">
+        <a id="mob-nav-home" href="#home" class="mobile-nav-link text-[#2563eb]"
+          >Home</a
+        >
+        <a
+          id="mob-nav-plans"
+          href="#plans"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >Plans</a
+        >
+        <a
+          id="mob-nav-about"
+          href="#about-us"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >About Us</a
+        >
+        <a
+          id="mob-nav-privacy"
+          href="#privacy-policy"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >Privacy Policy</a
+        >
+        <a
+          id="mob-nav-refund"
+          href="#refund-policy"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >Refund Policy</a
+        >
+        <a
+          id="mob-nav-platforms"
+          href="#supported-platforms"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >Supported Platforms</a
+        >
+        <a
+          id="mob-nav-contact"
+          href="#contact-us"
+          class="mobile-nav-link hover:text-[#2563eb] transition-colors"
+          >Contact Us</a
+        >
+      </div>
+      <div class="mt-auto pt-8 border-t border-slate-200">
+        <a
+          href="https://wa.me/918588853774"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-[#0f172a] text-white px-5 py-4 rounded-xl flex items-center justify-center gap-3 text-base font-bold hover:bg-slate-800 transition-colors shadow-md w-full"
+        >
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+
+    <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <div id="home-view" class="space-y-12">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-between gap-12 mt-10"
+        >
+          <div class="flex-1 max-w-2xl">
+            <div
+              class="flex items-center gap-2 text-xs font-bold text-slate-700 mb-6 border border-slate-200 bg-white px-4 py-2 rounded-full w-fit shadow-sm"
+            >
+              <i
+                data-lucide="check-circle-2"
+                class="w-4 h-4 text-slate-600"
+              ></i>
+              PREMIUM OTT & IPTV SOLUTIONS
+            </div>
+
+            <h1
+              class="text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-slate-800"
+            >
+              Trusted Entertainment <br />
+              <span class="text-[#2563eb]">Endless Possibilities</span>
+            </h1>
+
+            <p
+              class="text-slate-600 text-lg mb-10 leading-relaxed max-w-xl font-medium"
+            >
+              Enjoy your favorite content with our premium OTT & IPTV solutions.
+              Reliable services, professional support and premium experience -
+              all in one place.
+            </p>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+              <div class="flex items-center gap-3">
+                <i
+                  data-lucide="shield-check"
+                  class="w-6 h-6 text-slate-700"
+                ></i>
+                <span class="text-sm font-bold text-slate-800 leading-tight"
+                  >Trusted<br />Services</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="headset" class="w-6 h-6 text-slate-700"></i>
+                <span class="text-sm font-bold text-slate-800 leading-tight"
+                  >Professional<br />Support</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i
+                  data-lucide="monitor-play"
+                  class="w-6 h-6 text-slate-700"
+                ></i>
+                <span class="text-sm font-bold text-slate-800 leading-tight"
+                  >Premium<br />Experience</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="lock" class="w-6 h-6 text-slate-700"></i>
+                <span class="text-sm font-bold text-slate-800 leading-tight"
+                  >Secure &<br />Reliable</span
+                >
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/918588853774"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-[#0f172a] text-white px-8 py-4 rounded-lg flex inline-items-center justify-center sm:justify-start gap-3 font-bold hover:bg-slate-800 transition-colors shadow-md text-sm tracking-wide w-fit"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              CONTACT ON WHATSAPP &rarr;
+            </a>
+          </div>
+
+          <div class="flex-1 w-full flex justify-center lg:justify-end">
+            <div class="w-full max-w-[700px]">
+              <svg
+                viewBox="0 0 800 500"
+                class="w-full h-auto drop-shadow-xl"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="800" height="500" fill="transparent" />
+
+                <path d="M 0 350 L 800 350" stroke="#e2e8f0" stroke-width="2" />
+
+                <g transform="translate(680, 180)">
+                  <rect
+                    x="20"
+                    y="150"
+                    width="50"
+                    height="70"
+                    rx="4"
+                    fill="#1e293b"
+                  />
+                  <rect
+                    x="15"
+                    y="140"
+                    width="60"
+                    height="15"
+                    rx="2"
+                    fill="#fbbf24"
+                  />
+                  <path
+                    d="M45 140 Q 20 60 10 20 Q 40 40 45 140"
+                    fill="#15803d"
+                  />
+                  <path
+                    d="M45 140 Q 70 60 80 20 Q 50 40 45 140"
+                    fill="#16a34a"
+                  />
+                  <path
+                    d="M45 140 Q 45 40 45 0 Q 60 30 45 140"
+                    fill="#22c55e"
+                  />
+                  <path d="M45 140 Q 0 80 0 50 Q 20 70 45 140" fill="#4ade80" />
+                </g>
+
+                <g transform="translate(250, 80)">
+                  <line
+                    x1="50"
+                    y1="80"
+                    x2="20"
+                    y2="300"
+                    stroke="#cbd5e1"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="50"
+                    y1="80"
+                    x2="80"
+                    y2="300"
+                    stroke="#cbd5e1"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="50"
+                    y1="80"
+                    x2="50"
+                    y2="300"
+                    stroke="#94a3b8"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                  />
+                  <path d="M10 80 L90 80 L70 20 L30 20 Z" fill="#475569" />
+                  <path d="M10 80 L90 80 L85 90 L15 90 Z" fill="#334155" />
+                </g>
+
+                <rect
+                  x="350"
+                  y="300"
+                  width="300"
+                  height="50"
+                  rx="4"
+                  fill="#64748b"
+                />
+                <rect
+                  x="360"
+                  y="310"
+                  width="85"
+                  height="30"
+                  rx="2"
+                  fill="#475569"
+                />
+                <rect
+                  x="455"
+                  y="310"
+                  width="90"
+                  height="30"
+                  rx="2"
+                  fill="#475569"
+                />
+                <rect
+                  x="555"
+                  y="310"
+                  width="85"
+                  height="30"
+                  rx="2"
+                  fill="#475569"
+                />
+
+                <rect
+                  x="400"
+                  y="130"
+                  width="200"
+                  height="120"
+                  rx="4"
+                  fill="#0f172a"
+                />
+                <rect x="405" y="135" width="190" height="110" fill="#38bdf8" />
+
+                <path
+                  d="M405 245 L 595 245 L 595 200 Q 550 180 500 210 T 405 190 Z"
+                  fill="#4ade80"
+                />
+                <circle cx="440" cy="190" r="12" fill="#166534" />
+                <rect x="438" y="200" width="4" height="10" fill="#78350f" />
+                <circle cx="480" cy="205" r="8" fill="#166534" />
+                <rect x="478" y="210" width="3" height="10" fill="#78350f" />
+                <circle cx="530" cy="225" r="4" fill="#facc15" />
+                <circle cx="570" cy="215" r="4" fill="#f8fafc" />
+
+                <rect
+                  x="300"
+                  y="420"
+                  width="450"
+                  height="40"
+                  rx="8"
+                  fill="#fbbf24"
+                />
+                <rect
+                  x="310"
+                  y="360"
+                  width="430"
+                  height="70"
+                  rx="15"
+                  fill="#fcd34d"
+                />
+
+                <path
+                  d="M380 360 Q 380 300 410 300 Q 440 300 440 360 Z"
+                  fill="#1e40af"
+                />
+                <circle cx="410" cy="285" r="22" fill="#1c1917" />
+
+                <path
+                  d="M460 360 Q 460 320 480 320 Q 500 320 500 360 Z"
+                  fill="#be123c"
+                />
+                <circle cx="480" cy="310" r="16" fill="#292524" />
+                <circle cx="465" cy="325" r="7" fill="#292524" />
+                <circle cx="495" cy="325" r="7" fill="#292524" />
+
+                <path
+                  d="M520 360 Q 520 320 540 320 Q 560 320 560 360 Z"
+                  fill="#047857"
+                />
+                <circle cx="540" cy="315" r="14" fill="#1c1917" />
+
+                <path
+                  d="M580 360 Q 580 300 610 300 Q 640 300 640 360 Z"
+                  fill="#881337"
+                />
+                <path d="M610" cy="270" r="20" fill="#292524" />
+                <path
+                  d="M610 270 Q 630 270 630 320 Q 610 330 590 320 Q 590 270 610 270 Z"
+                  fill="#292524"
+                />
+                <circle cx="610" cy="285" r="20" fill="#292524" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 flex flex-col lg:flex-row gap-6">
+          <div class="flex-1 flex flex-col gap-6 min-w-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+              <!-- ServicesCard -->
+              <div
+                id="services-section"
+                class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex-1 min-w-0"
+              >
+                <div class="flex items-center justify-center gap-4 mb-8">
+                  <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+                  <h2
+                    class="text-sm font-bold text-slate-800 tracking-wider whitespace-nowrap"
+                  >
+                    OUR SERVICES
+                  </h2>
+                  <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+                </div>
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-4 gap-3 lg:gap-4 xl:gap-6"
+                >
+                  <div class="flex flex-col items-center text-center">
+                    <div
+                      class="w-14 h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-800 mb-4 shadow-sm mx-auto"
+                    >
+                      <i
+                        data-lucide="play"
+                        class="w-6 h-6 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
+                      ></i>
+                    </div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-2 leading-tight"
+                    >
+                      OTT Subscription<br />Services
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9.5px] xl:text-[11px] text-slate-500 leading-relaxed font-medium"
+                    >
+                      Access premium OTT platforms with the best subscription
+                      plans.
+                    </p>
+                  </div>
+                  <div class="flex flex-col items-center text-center">
+                    <div
+                      class="w-14 h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-800 mb-4 shadow-sm mx-auto"
+                    >
+                      <i
+                        data-lucide="tv"
+                        class="w-6 h-6 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
+                      ></i>
+                    </div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-2 leading-tight"
+                    >
+                      IPTV Entertainment<br />Solutions
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9.5px] xl:text-[11px] text-slate-500 leading-relaxed font-medium"
+                    >
+                      Live TV, Movies, Sports and more with our reliable IPTV
+                      services.
+                    </p>
+                  </div>
+                  <div class="flex flex-col items-center text-center">
+                    <div
+                      class="w-14 h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-800 mb-4 shadow-sm mx-auto"
+                    >
+                      <i
+                        data-lucide="monitor-smartphone"
+                        class="w-6 h-6 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
+                      ></i>
+                    </div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-2 leading-tight"
+                    >
+                      Multi-Device<br />Streaming
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9.5px] xl:text-[11px] text-slate-500 leading-relaxed font-medium"
+                    >
+                      Watch your favorite content on multiple devices
+                      seamlessly.
+                    </p>
+                  </div>
+                  <div class="flex flex-col items-center text-center">
+                    <div
+                      class="w-14 h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-800 mb-4 shadow-sm mx-auto"
+                    >
+                      <i
+                        data-lucide="gift"
+                        class="w-6 h-6 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
+                      ></i>
+                    </div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-2 leading-tight"
+                    >
+                      Entertainment<br />Packages
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9.5px] xl:text-[11px] text-slate-500 leading-relaxed font-medium"
+                    >
+                      Flexible packages suitable for your entertainment needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PlatformsCard -->
+              <div
+                id="platforms-section"
+                class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex-1 min-w-0 flex flex-col"
+              >
+                <div class="flex items-center justify-center gap-4 mb-8">
+                  <div class="h-px bg-[#2563eb] w-6 sm:w-10"></div>
+                  <h2
+                    class="text-[13px] sm:text-sm font-bold text-slate-800 tracking-wider whitespace-nowrap"
+                  >
+                    SUPPORTED ENTERTAINMENT PLATFORMS
+                  </h2>
+                  <div class="h-px bg-[#2563eb] w-6 sm:w-10"></div>
+                </div>
+
+                <div
+                  class="grid grid-cols-2 sm:grid-cols-4 gap-3 lg:gap-4 xl:gap-6 flex-1 items-center mb-6"
+                >
+                  <div class="flex items-center justify-center p-2">
+                    <img
+                      src="./1bd29e1f-a956-4b19-b00f-36dcd314d9d5.jpeg"
+                      alt="Platform 1"
+                      class="w-full max-w-[120px] h-auto object-contain drop-shadow-sm rounded-lg"
+                    />
+                  </div>
+                  <div class="flex items-center justify-center p-2">
+                    <img
+                      src="./da043f22-141e-454e-b830-60c8fa6e0aa2.jpeg"
+                      alt="Platform 2"
+                      class="w-full max-w-[120px] h-auto object-contain drop-shadow-sm rounded-lg"
+                    />
+                  </div>
+                  <div class="flex items-center justify-center p-2">
+                    <img
+                      src="./a35c6d02-f9a6-401f-ae9f-7b52d7af268c.jpeg"
+                      alt="Platform 3"
+                      class="w-full max-w-[120px] h-auto object-contain drop-shadow-sm rounded-lg"
+                    />
+                  </div>
+                  <div class="flex items-center justify-center p-2">
+                    <img
+                      src="./IMG_0098.webp"
+                      alt="Platform 4"
+                      class="w-full max-w-[120px] h-auto object-contain drop-shadow-sm rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <p
+                  class="text-center text-[10px] text-slate-500 font-medium leading-relaxed mt-auto"
+                >
+                  All logos, trademarks and brand names belong to their
+                  respective owners.<br />
+                  Services are subject to platform availability and
+                  authorization.
+                </p>
+              </div>
+            </div>
+
+            <!-- WhyChooseCard -->
+            <div
+              id="why-choose-section"
+              class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 lg:p-8"
+            >
+              <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+                <h2
+                  class="text-sm font-bold text-slate-800 tracking-wider whitespace-nowrap"
+                >
+                  WHY CHOOSE TVPICKS?
+                </h2>
+                <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5"
+              >
+                <div
+                  class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3"
+                >
+                  <div
+                    class="shrink-0 w-10 h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-[#0f172a] rounded-full flex items-center justify-center text-white shadow-md"
+                  >
+                    <i
+                      data-lucide="shield-check"
+                      class="w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-1 leading-tight"
+                    >
+                      Legal & Authorized<br />Services
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9px] xl:text-[11px] text-slate-500 font-medium leading-relaxed"
+                    >
+                      We provide legal and authorized entertainment services.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3"
+                >
+                  <div
+                    class="shrink-0 w-10 h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-[#0f172a] rounded-full flex items-center justify-center text-white shadow-md"
+                  >
+                    <i
+                      data-lucide="headset"
+                      class="w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-1 leading-tight"
+                    >
+                      Trusted Customer<br />Support
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9px] xl:text-[11px] text-slate-500 font-medium leading-relaxed"
+                    >
+                      Our team is always ready to assist you professionally.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3"
+                >
+                  <div
+                    class="shrink-0 w-10 h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-[#0f172a] rounded-full flex items-center justify-center text-white shadow-md"
+                  >
+                    <i
+                      data-lucide="award"
+                      class="w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-1 leading-tight"
+                    >
+                      Reliable Entertainment<br />Solutions
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9px] xl:text-[11px] text-slate-500 font-medium leading-relaxed"
+                    >
+                      Stable and reliable services for uninterrupted
+                      entertainment.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3"
+                >
+                  <div
+                    class="shrink-0 w-10 h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-[#0f172a] rounded-full flex items-center justify-center text-white shadow-md"
+                  >
+                    <i
+                      data-lucide="star"
+                      class="w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5"
+                      fill="currentColor"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-1 leading-tight"
+                    >
+                      Premium Experience
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9px] xl:text-[11px] text-slate-500 font-medium leading-relaxed"
+                    >
+                      High quality streaming experience with the best value.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-3"
+                >
+                  <div
+                    class="shrink-0 w-10 h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-[#0f172a] rounded-full flex items-center justify-center text-white shadow-md"
+                  >
+                    <i
+                      data-lucide="user-check"
+                      class="w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3
+                      class="font-bold text-slate-800 text-[13px] lg:text-[11px] xl:text-[13px] mb-1 leading-tight"
+                    >
+                      Professional<br />Assistance
+                    </h3>
+                    <p
+                      class="text-[11px] lg:text-[9px] xl:text-[11px] text-slate-500 font-medium leading-relaxed"
+                    >
+                      We ensure complete customer satisfaction with our service.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ContactCard -->
+          <div
+            id="contact-section"
+            class="w-full lg:w-[280px] xl:w-[400px] shrink-0"
+          >
+            <div
+              class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 h-full flex flex-col"
+            >
+              <div class="flex items-center justify-center gap-4 mb-6">
+                <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+                <h2
+                  class="text-sm font-bold text-slate-800 tracking-wider whitespace-nowrap"
+                >
+                  CONTACT US
+                </h2>
+                <div class="h-px bg-[#2563eb] w-12 sm:w-16"></div>
+              </div>
+
+              <form class="flex flex-col gap-4 flex-1">
+                <div class="relative">
+                  <i
+                    data-lucide="user"
+                    class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"
+                  ></i>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-md text-sm font-medium focus:outline-none focus:border-[#2563eb] placeholder-slate-500 shadow-sm"
+                  />
+                </div>
+                <div class="relative">
+                  <i
+                    data-lucide="mail"
+                    class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"
+                  ></i>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-md text-sm font-medium focus:outline-none focus:border-[#2563eb] placeholder-slate-500 shadow-sm"
+                  />
+                </div>
+                <div class="relative">
+                  <i
+                    data-lucide="phone"
+                    class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"
+                  ></i>
+                  <input
+                    type="tel"
+                    placeholder="Your Mobile Number"
+                    class="w-full pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-md text-sm font-medium focus:outline-none focus:border-[#2563eb] placeholder-slate-500 shadow-sm"
+                  />
+                </div>
+                <div class="relative flex-1">
+                  <i
+                    data-lucide="message-square"
+                    class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"
+                  ></i>
+                  <textarea
+                    placeholder="Your Message"
+                    class="w-full h-full min-h-[120px] pl-11 pr-4 py-3 bg-white border border-slate-300 rounded-md text-sm font-medium focus:outline-none focus:border-[#2563eb] placeholder-slate-500 resize-none shadow-sm"
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="w-full bg-[#0f172a] text-white py-3.5 rounded-md font-bold text-sm flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors mt-2 shadow-md tracking-wide"
+                >
+                  <i
+                    data-lucide="send"
+                    class="w-4 h-4"
+                    fill="currentColor"
+                    stroke="none"
+                  ></i>
+                  SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of home-view -->
+
+      <!-- Plans View Section -->
+      <div id="plans-view" class="hidden my-12 w-full">
+        <div
+          class="bg-white rounded-[32px] shadow-lg border border-slate-100 overflow-hidden relative min-h-[600px] w-full p-8 md:p-12 lg:p-16"
+        >
+          <div
+            class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-red-500 to-blue-600 opacity-90 z-20"
+          ></div>
+
+          <div class="text-center max-w-3xl mx-auto mb-16 relative z-20">
+            <h1
+              class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4"
+            >
+              Our Subscription <span class="text-[#2563eb]">Plans</span>
+            </h1>
+            <p class="text-slate-600 text-lg">
+              Choose the perfect package from our top providers. Premium
+              quality, reliable service, and 24/7 support.
+            </p>
+            <div class="flex items-center justify-center gap-1.5 mt-6">
+              <div class="w-16 h-1 bg-[#1e3a8a] rounded-full"></div>
+              <div class="w-2.5 h-2.5 bg-blue-500 rounded-sm"></div>
+              <div class="w-2.5 h-2.5 bg-red-500 rounded-sm"></div>
+            </div>
+          </div>
+
+          <!-- VYZ Plans Section -->
+          <div class="mb-16">
+            <div class="flex flex-col items-center gap-4 mb-12">
+              <img
+                src="https://www.vzy.co.in/assets/vzy-favicon-BqMjm7Bc.png"
+                onerror="
+                  this.src =
+                    'https://placehold.co/150x50/1e3a8a/white?text=VYZ'
+                "
+                alt="VYZ Logo"
+                class="h-12 object-contain"
+              />
+              <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800">
+                VYZ Packages
+              </h2>
+              <div class="flex flex-wrap justify-center gap-4 mt-2">
+                <a href="/VYZ_Plans.pdf" target="_blank" class="flex items-center gap-2 bg-slate-100 text-slate-800 px-5 py-2.5 rounded-lg font-bold hover:bg-slate-200 transition-colors border border-slate-200 shadow-sm text-sm">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  View PDF
+                </a>
+                <a href="https://wa.me/918588853774" target="_blank" class="flex items-center gap-2 bg-[#2563eb] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#1d4ed8] transition-colors shadow-sm shadow-blue-500/20 text-sm">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  Contact on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto relative z-20"
+            >
+              <!-- VYZ Basic Plan (VYZ 1) -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    VYZ 1 Plan
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    Includes 10 Apps
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Hoichoi & Discovery</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >VYZ Exclusives</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >FanCode & Hungama</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Shorts TV & AaoNXT</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Stage, Tarang Plus & Sanskar</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- VYZ Standard Plan (VYZ 5) -->
+              <div
+                class="bg-white rounded-2xl border-2 border-[#2563eb] shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden relative transform lg:-translate-y-4"
+              >
+                <div
+                  class="absolute top-0 inset-x-0 bg-[#2563eb] text-white text-[11px] font-bold uppercase tracking-wider text-center py-1.5 z-10"
+                >
+                  Most Popular
+                </div>
+                <div
+                  class="p-8 pb-6 border-b border-blue-50 bg-blue-50/50 flex flex-col items-center pt-10"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    VYZ 5 Plan
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-[#2563eb] uppercase tracking-wider mb-4 text-center"
+                  >
+                    Includes 11 Premium Apps
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >JioHotstar & Sony Liv</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >Zee5 & VYZ Exclusives</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >FanCode & Hungama</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Shorts TV & AaoNXT</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Stage, Tarang Plus & Sanskar</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="star"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                        fill="currentColor"
+                      ></i>
+                      <span class="text-sm font-bold text-[#2563eb]"
+                        >Priority 24/7 Support</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-[#2563eb] text-white py-3 rounded-lg font-bold hover:bg-[#1e3a8a] transition-colors shadow-md shadow-blue-500/20"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- VYZ Premium Plan (VYZ Ent_6) -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    VYZ Ent 6 Plan
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-4 text-center"
+                  >
+                    Includes 14 Elite Apps
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >Prime Video & JioHotstar</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >Sony Liv & Zee5</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Sun Nxt, Aha Telgu & AHA TAMIL</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >VYZ Exclusives & Shorts TV</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >FanCode & Tarang Plus</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >AaoNXT, Stage & Sanskar</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zigg TV Plans Section -->
+          <div class="mb-16">
+            <div class="flex flex-col items-center gap-4 mb-12">
+              <div class="flex items-center gap-2">
+                <img
+                  src="https://ziggtv.com/admin/assets/uploads/site/1779455475_logo_logo-2.png"
+                  onerror="
+                    this.src =
+                      'https://placehold.co/150x50/1e3a8a/white?text=Zigg+TV'
+                  "
+                  alt="Zigg TV Logo"
+                  class="h-12 object-contain"
+                />
+              </div>
+              <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800">
+                Zigg TV IPTV Packages
+              </h2>
+              <div class="flex flex-wrap justify-center gap-4 mt-2">
+                <a href="/Zigg_Plans.pdf" target="_blank" class="flex items-center gap-2 bg-slate-100 text-slate-800 px-5 py-2.5 rounded-lg font-bold hover:bg-slate-200 transition-colors border border-slate-200 shadow-sm text-sm">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  View PDF
+                </a>
+                <a href="https://wa.me/918588853774" target="_blank" class="flex items-center gap-2 bg-[#2563eb] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#1d4ed8] transition-colors shadow-sm shadow-blue-500/20 text-sm">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  Contact on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto relative z-20"
+            >
+              <!-- Bronze HD Plan -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Bronze HD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    70 Pay Channels (15 HD + 55 SD)
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >370+ FTA Channels Included</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >News, Regional, Music & Devotional</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Premium HD Entertainment</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Zee TV HD, Zee Cinema HD, & Pictures HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Top Infotainment</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Discovery HD, Animal Planet HD, TLC HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="smartphone"
+                        class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >ZiggApp on Android/Fire TV</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Silver HD Plan -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Silver HD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    84 Pay Channels (21 HD + 63 SD)
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >370+ FTA Channels Included</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Sony & Colors Network</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Sony HD, Colors HD, Sony Max 2</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Live Sports Action</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Star Sports 1 HD Hindi, Eurosports HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Kids Channels</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Nick Junior, Sonic, Pogo, Cartoon Network</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Gold HD Plan (Popular) -->
+              <div
+                class="bg-white rounded-2xl border-2 border-[#2563eb] shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden relative transform lg:-translate-y-4"
+              >
+                <div
+                  class="absolute top-0 inset-x-0 bg-[#2563eb] text-white text-[11px] font-bold uppercase tracking-wider text-center py-1.5 z-10"
+                >
+                  Most Popular
+                </div>
+                <div
+                  class="p-8 pb-6 border-b border-blue-50 bg-blue-50/50 flex flex-col items-center pt-10"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">Gold HD</h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-white text-[#2563eb] text-xs font-bold border border-blue-200 shadow-sm"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-[#2563eb] uppercase tracking-wider mb-4 text-center"
+                  >
+                    94 Pay Channels (29 HD + 65 SD)
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >370+ FTA Channels Included</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Star Plus HD & MTV HD</span
+                        >
+                        <span class="text-xs text-slate-600 mt-0.5"
+                          >Expanded premium entertainment</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Premium Knowledge & Wildlife</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >History TV 18, Nat Geo Wild HD, CNBC TV18 Prime
+                          HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Expanded Sports</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Star Sports 2 Hindi HD</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-[#2563eb] text-white py-3 rounded-lg font-bold hover:bg-[#1e3a8a] transition-colors shadow-md shadow-blue-500/20"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Gold+ HD Plan -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Gold+ HD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    116 Pay Channels (43 HD + 67 SD)
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >370+ FTA Channels Included</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Complete Hindi Movies</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Star Gold HD, Star Gold Romance, Sony Max HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Enhanced Kids Pack</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Disney Channel HD, Super Hungama, Nick HD+</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Nature & Lifestyle</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Sony BBC Earth HD, Nat Geo HD</span
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Platinum HD Plan -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group lg:col-start-2"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Platinum HD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    125 Pay Channels (53 HD + 72 SD)
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >The Ultimate TV Experience</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Everything from Gold+ and more</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >English Movies & Entertainment</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Star Movies HD, Sony Pix HD, Colors Infinity HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-purple-600 shrink-0 mt-0.5"
+                      ></i>
+                      <div>
+                        <span class="text-sm text-slate-700 font-bold block"
+                          >Complete Sports Action</span
+                        >
+                        <span class="text-xs text-slate-500 mt-0.5"
+                          >Star Sports Select HD1 & HD2, Sony Sports Ten 1/2/3
+                          HD</span
+                        >
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="smartphone"
+                        class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >ZiggApp on Android/Fire TV</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-[#2563eb] text-white py-3 rounded-lg font-bold hover:bg-[#1e3a8a] transition-colors shadow-md shadow-blue-500/20"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Umbrella IPTV Plans Section -->
+          <div class="mb-16">
+            <div class="flex flex-col items-center gap-4 mb-12">
+              <div class="flex items-center gap-2">
+                <img
+                  src="https://static.wixstatic.com/media/d80506_d1574c615e2b4fe6a7af035e1df486bd~mv2.png"
+                  alt="Umbrella IPTV Logo"
+                  class="h-10 object-contain"
+                />
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800">
+                  Umbrella IPTV Packages
+                </h2>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4 mt-2">
+                <a href="/Umbrella_Packages.pdf" target="_blank" class="flex items-center gap-2 bg-slate-100 text-slate-800 px-5 py-2.5 rounded-lg font-bold hover:bg-slate-200 transition-colors border border-slate-200 shadow-sm text-sm">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  View PDF
+                </a>
+                <a href="https://wa.me/918588853774" target="_blank" class="flex items-center gap-2 bg-[#2563eb] text-white px-5 py-2.5 rounded-lg font-bold hover:bg-[#1d4ed8] transition-colors shadow-sm shadow-blue-500/20 text-sm">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  Contact on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto relative z-20"
+            >
+              <!-- Base FTA Pack -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Base FTA Pack
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 mt-1"
+                    >Standard Definition</span
+                  >
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    Mandatory Pack
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Extensive FTA Channel List</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >News, Movies & Music</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Devotional & Infotainment</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="smartphone"
+                        class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Android TV & STB Support</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Family Pack SD -->
+              <div
+                class="bg-white rounded-2xl border-2 border-[#2563eb] shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden relative transform lg:-translate-y-4"
+              >
+                <div
+                  class="absolute top-0 inset-x-0 bg-[#2563eb] text-white text-[11px] font-bold uppercase tracking-wider text-center py-1.5 z-10"
+                >
+                  Recommended
+                </div>
+                <div
+                  class="p-8 pb-6 border-b border-blue-50 bg-blue-50/50 flex flex-col items-center pt-10"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Family Pack SD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 mt-1"
+                    >Hindi, Marathi & Bangla</span
+                  >
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-[#2563eb] uppercase tracking-wider mb-4 text-center"
+                  >
+                    Base FTA + Premium SD
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-[#2563eb] shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-bold"
+                        >Everything in Base Pack</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Premium Entertainment (Sony, Zee)</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Kids Channels (Cartoon Network, Pogo)</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="smartphone"
+                        class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Umbrella App Ecosystem</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-[#2563eb] text-white py-3 rounded-lg font-bold hover:bg-[#1e3a8a] transition-colors shadow-md shadow-blue-500/20"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Family Pack HD -->
+              <div
+                class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden group"
+              >
+                <div
+                  class="p-8 pb-6 border-b border-slate-100 bg-slate-50 flex flex-col items-center"
+                >
+                  <h3 class="text-xl font-bold text-slate-800 mb-2">
+                    Family Pack HD
+                  </h3>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span
+                      class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200"
+                    >
+                      Pricing on Request
+                    </span>
+                  </div>
+                  <span class="text-[10px] text-slate-400 mt-1"
+                    >High-Quality Entertainment</span
+                  >
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                  <p
+                    class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 text-center"
+                  >
+                    Ultimate Regional HD
+                  </p>
+                  <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >All Regional Varieties Supported</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Premium HD Movies & Entertainment</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="check-circle-2"
+                        class="w-5 h-5 text-green-500 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Premium Sports Pack Included</span
+                      >
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <i
+                        data-lucide="smartphone"
+                        class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"
+                      ></i>
+                      <span class="text-sm text-slate-700 font-medium"
+                        >Full HD Smart TV Support</span
+                      >
+                    </li>
+                  </ul>
+                  <a
+                    href="https://wa.me/918588853774"
+                    target="_blank"
+                    class="w-full block text-center bg-slate-100 text-slate-800 border border-slate-200 py-3 rounded-lg font-bold hover:bg-[#2563eb] hover:text-white hover:border-[#2563eb] transition-colors"
+                  >
+                    Contact on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Us View Section -->
+      <div id="about-view" class="hidden w-full">
+        <div
+          class="bg-white overflow-hidden relative min-h-[750px] lg:min-h-[850px] grid grid-cols-1 lg:grid-cols-12 w-full"
+        >
+          <!-- Bottom Center Decorative Accent -->
+          <div
+            class="absolute bottom-0 left-1/3 right-1/3 h-[4px] bg-red-600 rounded-t-full opacity-90 z-20"
+          ></div>
+
+          <!-- Left Content Column -->
+          <div
+            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-7 flex flex-col justify-center relative overflow-hidden"
+          >
+            <div class="mb-10 relative z-20">
+              <h1
+                class="text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-4"
+              >
+                About Us
+              </h1>
+              <div class="flex items-center gap-1.5">
+                <div class="w-24 h-1 bg-[#1e3a8a] rounded-full"></div>
+                <div class="w-2.5 h-2.5 bg-blue-400 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-blue-600 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-500 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-700 rounded-sm"></div>
+              </div>
+            </div>
+
+            <div class="space-y-6 text-[#1e293b] leading-relaxed relative z-20">
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                We provide professional support, onboarding assistance, and
+                service coordination for company-authorized IPTV and OTT
+                platforms.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed font-medium"
+              >
+                We work in coordination with authorized partners, ISPs, and
+                operators to assist users with subscription-related information,
+                activation guidance, customer support coordination, and
+                operational assistance in a professional and organized manner.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed font-medium"
+              >
+                User registrations and service activations are processed only
+                through official and authorized platforms. All subscription
+                payments, service charges, and transactions are handled directly
+                by the respective authorized platform or service provider. We do
+                not collect, process, or hold payments on behalf of any
+                third-party platform.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed font-medium"
+              >
+                All subscription policies, service availability, refunds,
+                billing matters, and platform-specific terms remain subject to
+                the policies and responsibility of the respective authorized
+                service provider.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                We provide support and coordination services only for legal,
+                authorized, and compliant services.
+              </p>
+              <div
+                class="w-32 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#dc2626] rounded-full mt-6"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Visual Graphic Column -->
+          <div
+            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full"
+          >
+            <!-- Glowing effects -->
+            <div
+              class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"
+            ></div>
+
+            <!-- Custom SVG Ribbons Background -->
+            <svg
+              class="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 500 700"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Gradients definitions -->
+              <defs>
+                <linearGradient
+                  id="blueRibbon"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#0a1d4a" />
+                  <stop offset="30%" stop-color="#1e3a8a" />
+                  <stop offset="70%" stop-color="#2563eb" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+                <linearGradient
+                  id="redRibbon"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#7f1d1d" />
+                  <stop offset="50%" stop-color="#dc2626" />
+                  <stop offset="100%" stop-color="#f87171" />
+                </linearGradient>
+                <linearGradient
+                  id="lightBlueSheen"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
+                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
+                </linearGradient>
+                <radialGradient id="cornerGlow" cx="100%" cy="100%" r="80%">
+                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Dot grid background -->
+              <pattern
+                id="gridDots"
+                width="18"
+                height="18"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#gridDots)" />
+
+              <!-- Corner glows -->
+              <rect width="100%" height="100%" fill="url(#cornerGlow)" />
+
+              <!-- High-fidelity Glossy Sweeping Ribbons -->
+              <!-- 1. Background Shadow Ribbon -->
+              <path
+                d="M 40 0 C 290 120, -60 480, 260 700"
+                fill="none"
+                stroke="#e2e8f0"
+                stroke-width="85"
+                stroke-linecap="round"
+                opacity="0.6"
+              />
+              <path
+                d="M 40 0 C 290 120, -60 480, 260 700"
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-width="65"
+                stroke-linecap="round"
+                opacity="0.4"
+              />
+
+              <!-- 2. Dark Blue Ribbon (Right Side) -->
+              <path
+                d="M 60 0 C 310 120, -40 480, 280 700"
+                fill="none"
+                stroke="url(#blueRibbon)"
+                stroke-width="48"
+                stroke-linecap="round"
+              />
+
+              <!-- 3. Red Accent Ribbon (Left Side of Blue Ribbon) -->
+              <path
+                d="M 25 0 C 275 120, -75 480, 245 700"
+                fill="none"
+                stroke="url(#redRibbon)"
+                stroke-width="16"
+                stroke-linecap="round"
+              />
+
+              <!-- 4. Glossy Highlight/Reflection Strip -->
+              <path
+                d="M 60 0 C 310 120, -40 480, 280 700"
+                fill="none"
+                stroke="url(#lightBlueSheen)"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+
+              <!-- 5. Fine White Sparkle Seam -->
+              <path
+                d="M 60 0 C 310 120, -40 480, 280 700"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+
+              <!-- Secondary Accent Curves for Depth -->
+              <path
+                d="M 100 -50 C 350 150, 0 500, 350 750"
+                fill="none"
+                stroke="#60a5fa"
+                stroke-width="2"
+                stroke-dasharray="6 4"
+                opacity="0.4"
+              />
+              <path
+                d="M -50 100 C 150 300, -150 500, 100 800"
+                fill="none"
+                stroke="#f87171"
+                stroke-width="1.5"
+                opacity="0.3"
+              />
+            </svg>
+
+            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
+            <div
+              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[280px]"
+            >
+              <img
+                src="tvpicks-logo.png"
+                alt="TVPicks Logo"
+                class="w-full h-auto object-contain drop-shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Privacy Policy View Section -->
+      <div id="privacy-policy-view" class="hidden my-12">
+        <div
+          class="bg-white rounded-[32px] shadow-lg border border-slate-100 overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12"
+        >
+          <!-- Top Edge Decorative Gradient Bar -->
+          <div
+            class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"
+          ></div>
+
+          <!-- Left Content Column -->
+          <div
+            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+          >
+            <div class="mb-10">
+              <h1
+                class="text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-4"
+              >
+                <span class="text-[#1e3a8a]">Privacy</span>
+                <span class="text-[#dc2626]">Policy</span>
+              </h1>
+              <div class="flex items-center gap-1.5">
+                <div class="w-24 h-1 bg-[#1e3a8a] rounded-full"></div>
+                <div class="w-2.5 h-2.5 bg-blue-400 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-blue-600 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-500 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-700 rounded-sm"></div>
+              </div>
+            </div>
+
+            <div class="space-y-6 text-[#1e293b] leading-relaxed">
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                We are committed to protecting your privacy and keeping your
+                personal information secure. This Privacy Policy explains how we
+                collect, use and safeguard your information.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed font-medium"
+              >
+                When you visit our website, fill out a form or use our services,
+                we may collect personal information such as your name, mobile
+                number, email address, address and payment related information.
+                This information is collected to fulfill your requirements,
+                provide assistance and improve our services.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed font-medium"
+              >
+                The information we collect is used to respond to your inquiries,
+                contact you and provide customer support. Your email address or
+                mobile number may also be used to send you updates, offers or
+                important service related information. You can opt out of
+                receiving promotional messages at any time. We do not sell or
+                share your personal information with any third party for
+                marketing purposes.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                We use appropriate security measures to protect your personal
+                information from unauthorized access, disclosure or misuse.
+              </p>
+              <div
+                class="w-32 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#dc2626] rounded-full mt-6"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Visual Graphic Column -->
+          <div
+            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
+          >
+            <!-- Glowing effects -->
+            <div
+              class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"
+            ></div>
+
+            <!-- Custom SVG Ribbons Background -->
+            <svg
+              class="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 500 700"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Gradients definitions -->
+              <defs>
+                <linearGradient
+                  id="blueRibbonPrivacy"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#0a1d4a" />
+                  <stop offset="30%" stop-color="#1e3a8a" />
+                  <stop offset="70%" stop-color="#2563eb" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+                <linearGradient
+                  id="redRibbonPrivacy"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#7f1d1d" />
+                  <stop offset="50%" stop-color="#dc2626" />
+                  <stop offset="100%" stop-color="#f87171" />
+                </linearGradient>
+                <linearGradient
+                  id="lightBlueSheenPrivacy"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
+                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
+                </linearGradient>
+                <radialGradient
+                  id="cornerGlowPrivacy"
+                  cx="100%"
+                  cy="100%"
+                  r="80%"
+                >
+                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Dot grid background -->
+              <pattern
+                id="gridDotsPrivacy"
+                width="18"
+                height="18"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#gridDotsPrivacy)" />
+
+              <!-- Corner glows -->
+              <rect width="100%" height="100%" fill="url(#cornerGlowPrivacy)" />
+
+              <!-- High-fidelity Glossy Sweeping Ribbons -->
+              <!-- 1. Background Shadow Ribbon -->
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#e2e8f0"
+                stroke-width="85"
+                stroke-linecap="round"
+                opacity="0.6"
+              />
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-width="65"
+                stroke-linecap="round"
+                opacity="0.4"
+              />
+
+              <!-- 2. Dark Blue Ribbon -->
+              <path
+                d="M 10 0 C 260 120, -90 480, 230 700"
+                fill="none"
+                stroke="url(#blueRibbonPrivacy)"
+                stroke-width="48"
+                stroke-linecap="round"
+              />
+
+              <!-- 3. Red Accent Ribbon -->
+              <path
+                d="M 40 0 C 290 120, -60 480, 260 700"
+                fill="none"
+                stroke="url(#redRibbonPrivacy)"
+                stroke-width="18"
+                stroke-linecap="round"
+              />
+
+              <!-- 4. Glossy Highlight/Reflection Strip -->
+              <path
+                d="M 22 0 C 272 120, -78 480, 242 700"
+                fill="none"
+                stroke="url(#lightBlueSheenPrivacy)"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+
+              <!-- 5. Fine White Sparkle Seam -->
+              <path
+                d="M 25 0 C 275 120, -75 480, 245 700"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+
+              <!-- Secondary Accent Curves for Depth -->
+              <path
+                d="M 100 -50 C 350 150, 0 500, 350 750"
+                fill="none"
+                stroke="#60a5fa"
+                stroke-width="2"
+                stroke-dasharray="6 4"
+                opacity="0.4"
+              />
+              <path
+                d="M -50 100 C 150 300, -150 500, 100 800"
+                fill="none"
+                stroke="#f87171"
+                stroke-width="1.5"
+                opacity="0.3"
+              />
+            </svg>
+
+            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
+            <div
+              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[280px]"
+            >
+              <img
+                src="tvpicks-logo.png"
+                alt="TVPicks Logo"
+                class="w-full h-auto object-contain drop-shadow-md"
+              />
+              <p
+                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+              >
+                Authorized OTT & IPTV Services
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Refund Policy View Section -->
+      <div id="refund-policy-view" class="hidden my-12">
+        <div
+          class="bg-white rounded-[32px] shadow-lg border border-slate-100 overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12"
+        >
+          <!-- Top Edge Decorative Gradient Bar -->
+          <div
+            class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"
+          ></div>
+
+          <!-- Left Content Column -->
+          <div
+            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+          >
+            <div class="mb-10">
+              <h1
+                class="text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-4"
+              >
+                <span class="text-[#1e3a8a]">Refund</span>
+                <span class="text-[#dc2626]">Policy</span>
+              </h1>
+              <div class="flex items-center gap-1.5">
+                <div class="w-24 h-1 bg-[#1e3a8a] rounded-full"></div>
+                <div class="w-2.5 h-2.5 bg-blue-400 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-blue-600 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-500 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-700 rounded-sm"></div>
+              </div>
+            </div>
+
+            <div class="space-y-6 text-[#1e293b] leading-relaxed">
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                Any refund request, cancellation request, billing dispute, or
+                subscription-related matter shall be handled in accordance with
+                the applicable policies and terms of the respective authorized
+                service provider/platform.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                Once any subscription, activation, or digital service has been
+                successfully activated, it may be considered non-refundable as
+                per the policy of the respective service provider.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                Service availability, channels/content, application performance,
+                technical interruptions, or platform-related modifications are
+                managed and controlled by the respective platform/service
+                provider. The final decision and responsibility regarding such
+                matters shall remain with the respective service provider only.
+              </p>
+              <p
+                class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+              >
+                We provide support, onboarding assistance, and service
+                coordination services only. Any subscription, billing, refund,
+                or platform-specific matter shall remain subject to the
+                policies, procedures, and final resolution of the respective
+                authorized platform/provider.
+              </p>
+              <div
+                class="w-32 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#dc2626] rounded-full mt-6"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Visual Graphic Column -->
+          <div
+            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
+          >
+            <!-- Glowing effects -->
+            <div
+              class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"
+            ></div>
+
+            <!-- Custom SVG Ribbons Background -->
+            <svg
+              class="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 500 700"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Gradients definitions -->
+              <defs>
+                <linearGradient
+                  id="blueRibbonRefund"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#0a1d4a" />
+                  <stop offset="30%" stop-color="#1e3a8a" />
+                  <stop offset="70%" stop-color="#2563eb" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+                <linearGradient
+                  id="redRibbonRefund"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#7f1d1d" />
+                  <stop offset="50%" stop-color="#dc2626" />
+                  <stop offset="100%" stop-color="#f87171" />
+                </linearGradient>
+                <linearGradient
+                  id="lightBlueSheenRefund"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
+                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
+                </linearGradient>
+                <radialGradient
+                  id="cornerGlowRefund"
+                  cx="100%"
+                  cy="100%"
+                  r="80%"
+                >
+                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Dot grid background -->
+              <pattern
+                id="gridDotsRefund"
+                width="18"
+                height="18"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#gridDotsRefund)" />
+
+              <!-- Corner glows -->
+              <rect width="100%" height="100%" fill="url(#cornerGlowRefund)" />
+
+              <!-- High-fidelity Glossy Sweeping Ribbons -->
+              <!-- 1. Background Shadow Ribbon -->
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#e2e8f0"
+                stroke-width="85"
+                stroke-linecap="round"
+                opacity="0.6"
+              />
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-width="65"
+                stroke-linecap="round"
+                opacity="0.4"
+              />
+
+              <!-- 2. Dark Blue Ribbon -->
+              <path
+                d="M 10 0 C 260 120, -90 480, 230 700"
+                fill="none"
+                stroke="url(#blueRibbonRefund)"
+                stroke-width="48"
+                stroke-linecap="round"
+              />
+
+              <!-- 3. Red Accent Ribbon -->
+              <path
+                d="M 40 0 C 290 120, -60 480, 260 700"
+                fill="none"
+                stroke="url(#redRibbonRefund)"
+                stroke-width="18"
+                stroke-linecap="round"
+              />
+
+              <!-- 4. Glossy Highlight/Reflection Strip -->
+              <path
+                d="M 22 0 C 272 120, -78 480, 242 700"
+                fill="none"
+                stroke="url(#lightBlueSheenRefund)"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+
+              <!-- 5. Fine White Sparkle Seam -->
+              <path
+                d="M 25 0 C 275 120, -75 480, 245 700"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+
+              <!-- Secondary Accent Curves for Depth -->
+              <path
+                d="M 100 -50 C 350 150, 0 500, 350 750"
+                fill="none"
+                stroke="#60a5fa"
+                stroke-width="2"
+                stroke-dasharray="6 4"
+                opacity="0.4"
+              />
+              <path
+                d="M -50 100 C 150 300, -150 500, 100 800"
+                fill="none"
+                stroke="#f87171"
+                stroke-width="1.5"
+                opacity="0.3"
+              />
+            </svg>
+
+            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
+            <div
+              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[280px]"
+            >
+              <img
+                src="tvpicks-logo.png"
+                alt="TVPicks Logo"
+                class="w-full h-auto object-contain drop-shadow-md"
+              />
+              <p
+                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+              >
+                Authorized OTT & IPTV Services
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact View Section -->
+      <div id="contact-view" class="hidden my-12">
+        <div
+          class="bg-white rounded-[32px] shadow-lg border border-slate-100 overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12"
+        >
+          <!-- Top Edge Decorative Gradient Bar -->
+          <div
+            class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"
+          ></div>
+
+          <!-- Left Content Column -->
+          <div
+            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+          >
+            <div class="mb-10">
+              <h1
+                class="text-5xl sm:text-6xl font-extrabold text-slate-900 tracking-tight mb-4"
+              >
+                <span class="text-[#1e3a8a]">Contact</span>
+                <span class="text-[#dc2626]">Us</span>
+              </h1>
+              <div class="flex items-center gap-1.5">
+                <div class="w-24 h-1 bg-[#1e3a8a] rounded-full"></div>
+                <div class="w-2.5 h-2.5 bg-blue-400 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-blue-600 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-500 rounded-sm"></div>
+                <div class="w-2.5 h-2.5 bg-red-700 rounded-sm"></div>
+              </div>
+            </div>
+
+            <div class="max-w-2xl text-left flex flex-col gap-8">
+              <div class="space-y-4">
+                <p
+                  class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+                >
+                  We are here to help! Whether you have a question about our
+                  services, need support, or want more information, feel free to
+                  reach out to us. Our team will get back to you as soon as
+                  possible.
+                </p>
+                <p
+                  class="text-[15px] sm:text-[16px] font-semibold text-slate-800 leading-relaxed"
+                >
+                  Please fill out the form below and we'll respond to your
+                  inquiry promptly.
+                </p>
+              </div>
+
+              <!-- Contact Form -->
+              <form class="space-y-8 max-w-xl">
+                <div>
+                  <label class="block text-[15px] font-bold text-[#1e3a8a] mb-2"
+                    >Full Name <span class="text-red-600">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="w-full border-b border-slate-800 bg-transparent py-2 focus:outline-none focus:border-[#2563eb] transition-colors text-slate-800 font-medium"
+                  />
+                </div>
+                <div>
+                  <label class="block text-[15px] font-bold text-[#1e3a8a] mb-2"
+                    >Email Address <span class="text-red-600">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="w-full border-b border-slate-800 bg-transparent py-2 focus:outline-none focus:border-[#2563eb] transition-colors text-slate-800 font-medium"
+                  />
+                </div>
+                <div>
+                  <label class="block text-[15px] font-bold text-[#1e3a8a] mb-2"
+                    >Mobile Number <span class="text-red-600">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="w-full border-b border-slate-800 bg-transparent py-2 focus:outline-none focus:border-[#2563eb] transition-colors text-slate-800 font-medium"
+                  />
+                </div>
+                <div>
+                  <label class="block text-[15px] font-bold text-[#1e3a8a] mb-2"
+                    >Message <span class="text-red-600">*</span></label
+                  >
+                  <textarea
+                    rows="1"
+                    class="w-full border-b border-slate-800 bg-transparent py-2 focus:outline-none focus:border-[#2563eb] transition-colors text-slate-800 font-medium resize-y min-h-[40px]"
+                  ></textarea>
+                </div>
+              </form>
+
+              <div class="mt-4 space-y-2">
+                <p class="font-bold text-[#1e3a8a] text-[15px]">
+                  Email:
+                  <a
+                    href="mailto:info@tvpicks.in"
+                    class="text-red-600 hover:text-red-700 transition-colors"
+                    >info@tvpicks.in</a
+                  >
+                </p>
+                <p class="font-bold text-[#1e3a8a] text-[15px]">
+                  Mobile:
+                  <a
+                    href="tel:+918888888888"
+                    class="text-red-600 hover:text-red-700 transition-colors"
+                    >+91 88888 88888</a
+                  >
+                </p>
+              </div>
+              <div
+                class="w-32 h-1 bg-gradient-to-r from-[#1e3a8a] to-[#dc2626] rounded-full mt-6"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Right Visual Graphic Column -->
+          <div
+            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
+          >
+            <!-- Glowing effects -->
+            <div
+              class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"
+            ></div>
+
+            <!-- Custom SVG Ribbons Background -->
+            <svg
+              class="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 500 700"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Gradients definitions -->
+              <defs>
+                <linearGradient
+                  id="blueRibbonContact"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#0a1d4a" />
+                  <stop offset="30%" stop-color="#1e3a8a" />
+                  <stop offset="70%" stop-color="#2563eb" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+                <linearGradient
+                  id="redRibbonContact"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#7f1d1d" />
+                  <stop offset="50%" stop-color="#dc2626" />
+                  <stop offset="100%" stop-color="#f87171" />
+                </linearGradient>
+                <linearGradient
+                  id="lightBlueSheenContact"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
+                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
+                </linearGradient>
+                <radialGradient
+                  id="cornerGlowContact"
+                  cx="100%"
+                  cy="100%"
+                  r="80%"
+                >
+                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
+                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+
+              <!-- Dot grid background -->
+              <pattern
+                id="gridDotsContact"
+                width="18"
+                height="18"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#gridDotsContact)" />
+
+              <!-- Corner glows -->
+              <rect width="100%" height="100%" fill="url(#cornerGlowContact)" />
+
+              <!-- High-fidelity Glossy Sweeping Ribbons -->
+              <!-- 1. Background Shadow Ribbon -->
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#e2e8f0"
+                stroke-width="85"
+                stroke-linecap="round"
+                opacity="0.6"
+              />
+              <path
+                d="M 0 0 C 250 120, -100 480, 220 700"
+                fill="none"
+                stroke="#cbd5e1"
+                stroke-width="65"
+                stroke-linecap="round"
+                opacity="0.4"
+              />
+
+              <!-- 2. Dark Blue Ribbon -->
+              <path
+                d="M 10 0 C 260 120, -90 480, 230 700"
+                fill="none"
+                stroke="url(#blueRibbonContact)"
+                stroke-width="48"
+                stroke-linecap="round"
+              />
+
+              <!-- 3. Red Accent Ribbon -->
+              <path
+                d="M 40 0 C 290 120, -60 480, 260 700"
+                fill="none"
+                stroke="url(#redRibbonContact)"
+                stroke-width="18"
+                stroke-linecap="round"
+              />
+
+              <!-- 4. Glossy Highlight/Reflection Strip -->
+              <path
+                d="M 22 0 C 272 120, -78 480, 242 700"
+                fill="none"
+                stroke="url(#lightBlueSheenContact)"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+
+              <!-- 5. Fine White Sparkle Seam -->
+              <path
+                d="M 25 0 C 275 120, -75 480, 245 700"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                opacity="0.9"
+              />
+
+              <!-- Secondary Accent Curves for Depth -->
+              <path
+                d="M 100 -50 C 350 150, 0 500, 350 750"
+                fill="none"
+                stroke="#60a5fa"
+                stroke-width="2"
+                stroke-dasharray="6 4"
+                opacity="0.4"
+              />
+              <path
+                d="M -50 100 C 150 300, -150 500, 100 800"
+                fill="none"
+                stroke="#f87171"
+                stroke-width="1.5"
+                opacity="0.3"
+              />
+            </svg>
+
+            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
+            <div
+              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[280px]"
+            >
+              <img
+                src="tvpicks-logo.png"
+                alt="TVPicks Logo"
+                class="w-full h-auto object-contain drop-shadow-md"
+              />
+              <p
+                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+              >
+                Authorized OTT & IPTV Services
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-white border-t border-slate-200 mt-16 pt-12 pb-6 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="max-w-[1600px] mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10"
+        >
+          <div>
+            <h4 class="text-xs font-bold text-[#2563eb] mb-5 tracking-wider">
+              GET IN TOUCH
+            </h4>
+            <div
+              class="flex flex-col gap-4 text-[13px] font-medium text-slate-700"
+            >
+              <a
+                href="https://wa.me/918588853774"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+              >
+                <i
+                  data-lucide="message-circle"
+                  class="w-5 h-5 text-slate-400"
+                ></i>
+                <span>WhatsApp Support Available</span>
+              </a>
+              <a
+                href="tel:+918588853774"
+                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+              >
+                <i data-lucide="phone" class="w-5 h-5 text-slate-400"></i>
+                <span>+91 85888 53774</span>
+              </a>
+              <a
+                href="https://www.tvpix.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+              >
+                <i data-lucide="globe" class="w-5 h-5 text-slate-400"></i>
+                <span>www.tvpix.in</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 lg:px-4">
+            <i
+              data-lucide="shield-check"
+              class="w-10 h-10 text-[#1e3a8a] shrink-0"
+              stroke-width="1.5"
+            ></i>
+            <p class="text-sm font-bold text-slate-700 leading-relaxed">
+              We are committed to providing legal, authorized and premium
+              entertainment services.
+            </p>
+          </div>
+
+          <div class="lg:px-4">
+            <div class="flex flex-col mb-4">
+              <img
+                src="tvpicks-logo.png"
+                alt="TVPicks Logo"
+                class="max-h-[44px] h-10 w-auto object-contain mb-1.5"
+              />
+              <span
+                class="text-[8px] font-bold text-slate-500 tracking-wider uppercase"
+              >
+                Legal & Authorized<br />Entertainment Services
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed">
+              Operated by<br />
+              <strong class="text-slate-800 text-[13px]"
+                >ANANYA ENTERPRISES</strong
+              ><br />
+              GST Registered Business
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-[11px] font-medium text-slate-400 leading-relaxed text-right lg:text-left"
+            >
+              All logos, trademarks and brand names belong to their respective
+              owners.<br /><br />
+              Services are provided subject to platform availability and
+              authorization.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-xs font-bold text-slate-500">
+            © 2026 TVPICKS. All Rights Reserved.
+          </p>
+          <div class="flex items-center gap-5 text-slate-600">
+            <a href="#" class="hover:text-blue-600 transition-colors"
+              ><i
+                data-lucide="facebook"
+                class="w-4 h-4"
+                fill="currentColor"
+                stroke="none"
+              ></i
+            ></a>
+            <a href="#" class="hover:text-pink-600 transition-colors"
+              ><i data-lucide="instagram" class="w-4 h-4"></i
+            ></a>
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              ><i
+                data-lucide="send"
+                class="w-4 h-4"
+                fill="currentColor"
+                stroke="none"
+              ></i
+            ></a>
+            <a href="#" class="hover:text-red-600 transition-colors"
+              ><i
+                data-lucide="youtube"
+                class="w-5 h-5"
+                fill="currentColor"
+                stroke="none"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+
+      function updateNavActiveState(activeId) {
+        const links = [
+          "nav-home",
+          "nav-plans",
+          "nav-about",
+          "nav-privacy",
+          "nav-refund",
+          "nav-platforms",
+          "nav-contact",
+        ];
+        links.forEach((id) => {
+          const el = document.getElementById(id);
+          const mobEl = document.getElementById("mob-" + id);
+          if (el) {
+            if (id === activeId) {
+              el.className =
+                "text-[#2563eb] border-b-2 border-[#2563eb] pb-1 font-bold text-sm";
+            } else {
+              el.className =
+                "hover:text-[#2563eb] transition-colors font-bold text-sm text-slate-700";
+            }
+          }
+          if (mobEl) {
+            if (id === activeId) {
+              mobEl.className = "mobile-nav-link text-[#2563eb]";
+            } else {
+              mobEl.className =
+                "mobile-nav-link hover:text-[#2563eb] transition-colors text-slate-800";
+            }
+          }
+        });
+      }
+
+      function handleRouting() {
+        const hash = window.location.hash || "#home";
+        const homeView = document.getElementById("home-view");
+        const plansView = document.getElementById("plans-view");
+        const aboutView = document.getElementById("about-view");
+        const privacyView = document.getElementById("privacy-policy-view");
+        const refundView = document.getElementById("refund-policy-view");
+        const contactView = document.getElementById("contact-view");
+        const mainEl = document.querySelector("main");
+
+        if (hash === "#about-us") {
+          if (mainEl) {
+            mainEl.className = "w-full pb-16";
+          }
+          homeView.classList.add("hidden");
+          if (plansView) plansView.classList.add("hidden");
+          aboutView.classList.remove("hidden");
+          if (privacyView) privacyView.classList.add("hidden");
+          if (refundView) refundView.classList.add("hidden");
+          if (contactView) contactView.classList.add("hidden");
+          updateNavActiveState("nav-about");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (hash === "#plans") {
+          if (mainEl) {
+            mainEl.className = "w-full pb-16";
+          }
+          homeView.classList.add("hidden");
+          if (plansView) plansView.classList.remove("hidden");
+          aboutView.classList.add("hidden");
+          if (privacyView) privacyView.classList.add("hidden");
+          if (refundView) refundView.classList.add("hidden");
+          if (contactView) contactView.classList.add("hidden");
+          updateNavActiveState("nav-plans");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (hash === "#privacy-policy") {
+          if (mainEl) {
+            mainEl.className =
+              "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16";
+          }
+          homeView.classList.add("hidden");
+          if (plansView) plansView.classList.add("hidden");
+          aboutView.classList.add("hidden");
+          if (privacyView) privacyView.classList.remove("hidden");
+          if (refundView) refundView.classList.add("hidden");
+          if (contactView) contactView.classList.add("hidden");
+          updateNavActiveState("nav-privacy");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (hash === "#refund-policy") {
+          if (mainEl) {
+            mainEl.className =
+              "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16";
+          }
+          homeView.classList.add("hidden");
+          if (plansView) plansView.classList.add("hidden");
+          aboutView.classList.add("hidden");
+          if (privacyView) privacyView.classList.add("hidden");
+          if (refundView) refundView.classList.remove("hidden");
+          if (contactView) contactView.classList.add("hidden");
+          updateNavActiveState("nav-refund");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (hash === "#contact-us") {
+          if (mainEl) {
+            mainEl.className =
+              "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16";
+          }
+          homeView.classList.add("hidden");
+          if (plansView) plansView.classList.add("hidden");
+          aboutView.classList.add("hidden");
+          if (privacyView) privacyView.classList.add("hidden");
+          if (refundView) refundView.classList.add("hidden");
+          if (contactView) contactView.classList.remove("hidden");
+          updateNavActiveState("nav-contact");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          if (mainEl) {
+            mainEl.className =
+              "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16";
+          }
+          homeView.classList.remove("hidden");
+          if (plansView) plansView.classList.add("hidden");
+          aboutView.classList.add("hidden");
+          if (privacyView) privacyView.classList.add("hidden");
+          if (refundView) refundView.classList.add("hidden");
+          if (contactView) contactView.classList.add("hidden");
+
+          if (hash === "#services") {
+            updateNavActiveState("nav-services");
+            const target = document.getElementById("services-section");
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth", block: "center" });
+              }, 100);
+            }
+          } else if (hash === "#supported-platforms") {
+            updateNavActiveState("nav-platforms");
+            const target = document.getElementById("platforms-section");
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth", block: "center" });
+              }, 100);
+            }
+          } else if (hash === "#why-choose") {
+            updateNavActiveState("nav-why-choose");
+            const target = document.getElementById("why-choose-section");
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth", block: "center" });
+              }, 100);
+            }
+          } else {
+            updateNavActiveState("nav-home");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }
+      }
+
+      window.addEventListener("hashchange", handleRouting);
+      window.addEventListener("DOMContentLoaded", handleRouting);
+      // Run immediately in case DOMContentLoaded has already fired
+      handleRouting();
+
+      // Mobile Menu Logic
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const closeMenuBtn = document.getElementById("close-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+      function toggleMobileMenu() {
+        if (mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex");
+          document.body.style.overflow = "hidden"; // Prevent scrolling behind menu
+        } else {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("flex");
+          document.body.style.overflow = "";
+        }
+      }
+
+      mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+      closeMenuBtn.addEventListener("click", toggleMobileMenu);
+
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          toggleMobileMenu();
+        });
+      });
+    </script>
+  </body>
+</html>

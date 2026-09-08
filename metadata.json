@@ -1,0 +1,6 @@
+{
+  "name": "HTML Website",
+  "description": "An interactive HTML website viewer and live editor to preview, modify, and customize web pages in real time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
